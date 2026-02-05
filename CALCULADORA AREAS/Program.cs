@@ -29,6 +29,31 @@ namespace CALCULADORA_AREAS
                         double areaCuadrado = lado * lado;
                         Console.WriteLine($"El área del cuadrado es: {areaCuadrado}");
                         break;
+                    case 2:
+                        Console.Write("Ingrese la base del rectángulo: ");
+                        double baseRectangulo = Convert.ToDouble(Console.ReadLine());
+                        Console.Write("Ingrese la altura del rectángulo: ");
+                        double alturaRectangulo = Convert.ToDouble(Console.ReadLine());
+                        double areaRectangulo = baseRectangulo * alturaRectangulo;
+                        Console.WriteLine($"El área del rectángulo es: {areaRectangulo}");
+                        break;
+                    case 3:
+                        Console.Write("Ingrese el radio del círculo: ");
+                        double radio = Convert.ToDouble(Console.ReadLine());
+                        double areaCirculo = Math.PI * radio * radio;
+                        Console.WriteLine($"El área del círculo es: {areaCirculo}");
+                        break;
+                    case 4:
+                        Console.Write("Ingrese la base del triángulo: ");
+                        double baseTriangulo = Convert.ToDouble(Console.ReadLine());
+                        Console.Write("Ingrese la altura del triángulo: ");
+                        double alturaTriangulo = Convert.ToDouble(Console.ReadLine());
+                        double areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
+                        Console.WriteLine($"El área del triángulo es: {areaTriangulo}");
+                        break;
+                    case 5:
+                        Console.WriteLine("Saliendo...");
+                        break;
                    
                 }
             }
