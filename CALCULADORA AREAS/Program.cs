@@ -54,7 +54,9 @@ namespace CALCULADORA_AREAS
                     case 5:
                         Console.WriteLine("Saliendo...");
                         break;
-                   
+                   default:
+                        Console.WriteLine("Opción no válida. Intente de nuevo.");
+                        break;
                 }
             }
         }
